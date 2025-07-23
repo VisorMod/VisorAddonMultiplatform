@@ -1,0 +1,19 @@
+architectury {
+    common(rootProject.enabled_platforms.split(","))
+}
+loom{
+    accessWidenerPath = file("src/main/resources/mod.accesswidener")
+}
+
+
+dependencies {
+    // @Environment annotation and mixin extras
+    modImplementation(libs.fabric.loader)
+
+    modApi(libs.architectury.lib)
+
+    //modApi("com.github.Phoenix-Ra:Visor:0.0.10")
+    modApi parent.fileTree(dir: 'libs', include: '*.jar')
+
+}
+
