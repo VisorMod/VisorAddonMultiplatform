@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[46,)"
-license = "LGPLv3"
+license = "MIT"
 
 [[mods]]
 modId = "visor_example"
