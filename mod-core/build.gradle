@@ -12,7 +12,9 @@ dependencies {
 
     modApi(libs.architectury.lib)
 
-    modApi parent.fileTree(dir: 'libs', include: '*.jar')
+    //works for intellijIdea to include Visor dependency with sources,
+    //if you use different IDE, you might need to change the approach
+    modApi("com.github.VisorMod.Visor:fabric:0.1.0-pre16")
 
 }
 
