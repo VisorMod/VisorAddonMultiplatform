@@ -12,8 +12,6 @@ dependencies {
 
     modApi(libs.architectury.lib)
 
-    //works for intellijIdea to include Visor dependency with sources,
-    //if you use different IDE, you might need to change the approach
     modApi("com.github.VisorMod.Visor:fabric:0.1.0-pre16")
 
 }
